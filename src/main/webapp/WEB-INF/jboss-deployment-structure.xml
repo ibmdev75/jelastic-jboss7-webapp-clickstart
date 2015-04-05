@@ -1,0 +1,14 @@
+<!-- Descripteur utilisé pour contrôler le classloading de manière plus fine -->
+<jboss-deployment-structure>
+    <deployment>
+    </deployment>
+    <module name="deployment.module-javassist" >
+        <resources>
+            <resource-root path="javassist.jar" >
+                <filter>
+                    <exclude path="javassist/util/proxy" />
+                </filter>
+            </resource-root>
+        </resources>
+    </module>
+</jboss-deployment-structure>
